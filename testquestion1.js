@@ -22,6 +22,6 @@ function draw() {
 
 function keyPressed() {
     if (key === "w") {
-        b
+        ball.x += 2;
     }
 }
