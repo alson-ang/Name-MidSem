@@ -22,12 +22,14 @@ function setup() {
 function draw() {
     background(0);
 
-    
+    if (kb.presses("w")) {
+        
+    }
 }
 
 
 function keyPressed() {
     if (key === "w") {
-        ball.x += 2;
+        
     }
 }
