@@ -3,6 +3,7 @@ let ball;
 
 function setup() {
     new Canvas(600, 400); createCanvas(600, 400);
+    
     background(0);
 
     world.gravity.y = 10;
