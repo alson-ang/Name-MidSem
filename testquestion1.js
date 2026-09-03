@@ -14,6 +14,6 @@ function setup() {
 
 function draw() {
     if (mouse.presses()) {
-        
+        ball.vel.y = 10;
     }
 }
