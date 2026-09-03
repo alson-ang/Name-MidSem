@@ -30,6 +30,10 @@ function draw() {
     if (mouse.presses("left")) {
 
     }
+
+    if (ball.collides(something)) {
+        
+    }
 }
 
 
