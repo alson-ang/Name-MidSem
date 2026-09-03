@@ -10,8 +10,6 @@ function setup() {
     camera.x = 0; // Camera position
 
     ball = new Sprite(0, 0, 10, 10); // (x, y, width, height) or (x, y, diameter)
-    ball.mass = 10;
-    ball.drag = 10;
     ball.bounciness = 1;
     ball.color = "red";
     ball.collider = "dynamic"; // static
@@ -24,8 +22,7 @@ function draw() {
         ball.x += 1;
         ball.vel.y = 10;
     }
-
-    if (mouse.presses("left")) {
+     if (mouse.presses("left")) {
 
     }
 
