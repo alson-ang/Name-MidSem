@@ -23,7 +23,8 @@ function draw() {
     background(0);
 
     if (kb.presses("w")) {
-
+        ball.x += 1;
+        ball.vel.y = 5;
     }
 
     if (mouse.presses("left")) {
