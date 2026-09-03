@@ -32,7 +32,7 @@ function draw() {
     }
 
     if (ball.collides(something)) {
-        
+
     }
 }
 
