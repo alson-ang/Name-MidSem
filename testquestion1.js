@@ -8,6 +8,8 @@ function setup() {
 
     world.gravity.y = 10;
 
+    camera.x = 0;
+
     ball = new Sprite(0, 0, 10, 10); // (x, y, width, height) or (x, y, diameter)
     ball.mass = 10;
     ball.drag = 10;
