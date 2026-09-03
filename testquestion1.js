@@ -23,7 +23,11 @@ function draw() {
     background(0);
 
     if (kb.presses("w")) {
-        
+
+    }
+
+    if (mouse.presses("left")) {
+
     }
 }
 
