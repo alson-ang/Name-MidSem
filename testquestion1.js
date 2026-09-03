@@ -12,6 +12,8 @@ function setup() {
     ball.mass = 10;
     ball.drag = 10;
     ball.bounciness = 1;
+    ball.color = "red";
+    
 }
 
 function draw() {
