@@ -2,7 +2,8 @@
 let ball;
 
 function setup() {
-    ball
+    ball = new Sprite();
+    
 }
 
 function draw() {
