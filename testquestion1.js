@@ -23,9 +23,8 @@ function draw() {
         ball.vel.y = 10;
     }
      if (mouse.presses("left")) {
-
+        
     }
-
     if (ball.collides(something)) {
 
     }
