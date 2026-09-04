@@ -3,7 +3,7 @@ let ball;
 let something;
 
 function setup() {
-    new Canvas(600, 400);
+    new Canvas(500, 500);
 
     background(0); // grayscale 0 - 255 black - white
     world.gravity.y = 10;
