@@ -13,7 +13,8 @@ function setup() {
     ball.x = 0;
     ball.y = 0;
     ball.diameter = 10;
-    ball.w 
+    ball.width = 10;
+    ball.height = 10;
     ball.bounciness = 1;
     ball.color = "red";
     ball.collider = "dynamic"; // static
