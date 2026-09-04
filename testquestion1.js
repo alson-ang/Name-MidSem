@@ -10,7 +10,10 @@ function setup() {
     camera.x = 0; // Camera position
 
     ball = new Sprite(); // (x, y, width, height) or (x, y, diameter)
-    ball.
+    ball.x = 0;
+    ball.y = 0;
+    ball.diameter = 10;
+    ball.w 
     ball.bounciness = 1;
     ball.color = "red";
     ball.collider = "dynamic"; // static
