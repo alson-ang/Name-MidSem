@@ -9,13 +9,14 @@ function setup() {
     world.gravity.y = 10;
     camera.x = 0; // Camera position
 
-    ball = new Sprite(0, 0, 10, 10); // (x, y, width, height) or (x, y, diameter)
+    ball = new Sprite(); // (x, y, width, height) or (x, y, diameter)
     ball.x = 0;
     ball.y = 0;
     ball.diameter = 10;
     ball.width = 10;
     ball.height = 10;
     ball.bounciness = 1;
+    ball.mass = 10;
     ball.color = "red";
     ball.collider = "dynamic"; // static / kinematic
 }
