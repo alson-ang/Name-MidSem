@@ -9,7 +9,7 @@ function setup() {
     world.gravity.y = 10;
     camera.x = 0; // Camera position
 
-    ball = new Sprite(); // (x, y, width, height) or (x, y, diameter)
+    ball = new Sprite(0, 0, 10, 10); // (x, y, width, height) or (x, y, diameter)
     ball.x = 0;
     ball.y = 0;
     ball.diameter = 10;
