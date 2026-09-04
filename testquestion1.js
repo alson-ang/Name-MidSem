@@ -5,7 +5,7 @@ let something;
 function setup() {
     new Canvas(600, 400); createCanvas(600, 400);
 
-    background(0);
+    background(0); // grayscale 0 - 255 black to white
     world.gravity.y = 10;
     camera.x = 0; // Camera position
 
