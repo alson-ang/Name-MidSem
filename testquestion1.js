@@ -17,7 +17,7 @@ function setup() {
     ball.height = 10;
     ball.bounciness = 1;
     ball.color = "red";
-    ball.collider = "dynamic"; // static
+    ball.collider = "dynamic"; // static / dynamic
 }
 
 function draw() {
