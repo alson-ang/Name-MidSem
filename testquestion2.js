@@ -1,27 +1,22 @@
-let ball;
+let square;
 let floor;
+
 function setup() {
-createCanvas(600,400);
-background(220);
-world.gravity.y = 5;
-floor = new Sprite();
-floor.width = 600;
-floor.height=30;
-floor.x = width/2;
-floor.y = 390;
-floor.collider=  'static';
-floor.color = 'black';
+    new Canvas(600,400);
 
+    //game
+    background(0);
+    world.gravity.y = 10;
+
+    //square
+    square = new Sprite(300,0,30,30);
+    square.collider = "dynamic";
+
+    //floor 
+    floor = new Sprite(0,385,2400,30);
+    floor.collider = "static";
 }
-function draw() {
-    if (mouse.presses()) {
-        ball = new Sprite();
-        ball.diameter = 25;
-        ball.x = mouseX;
-        ball.y = mouseY;
-        ball.bounciness = 0.2;
-    }
-    background(220);
-        
 
+function draw() {
+    background(0)
 }
