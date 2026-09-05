@@ -1,46 +1,25 @@
-let square;
+// variables
+let fallingObject;
 let floor;
-let jumpChance = 0;
-
-function setup() {
+//setup
+function setup(){
     new Canvas(600,400);
-    
-    //game
-    background(0);
-    world.gravity.y = 10;
-    //square
-    square = new Sprite(300,0,30,30);
-    square.collider = "dynamic";
-
-    //floor 
-    floor = new Sprite(0,385,2400,30);
+    fallingObject = new Sprite()
+    fallingObject.x = 300;
+    fallingObject.y = 200;
+    fallingObject.width = 30;
+    fallingObject.height = 30;
+    fallingObject.collider = "dynamic";
+    fallingObject.mass = 1;
+    floor = new Sprite(2400,20,1200,20)
+    floor.x = 0;
+    floor.y = 390;
+    floor.width = 2400;
+    floor.height = 20;
     floor.collider = "static";
-
-    //camera pos
-    camera.x = square.x;
+    world.gravity.y = 10
 }
+function draw(){
+    background(220);
 
-function draw() {
-    background(0);
-    // square.vel.x = 3;
-    camera.x = square.x;
-
-    if (jumpChance = 1) {
-        if (kb.presses("space")) {
-            //HOW TO DO 5 PIXELS?????
-            //i tryed my best to get 5 pixels
-            square.vel.y += 7;
-            console.log(jumpChance);
-        }
-        else if(mouse.presses("left")) {
-            // 5+++++++ pixel jump
-            square.vel.y += 30;
-        }
-    }
-    if (square.collides(floor)) {
-        jumpChance += 1;
-        if (jumpChance >= 2) {
-            jumpChance = 0;
-        }
-    }
 }
