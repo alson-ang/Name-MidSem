@@ -3,3 +3,7 @@ function setup() {
     background(255); // grayscale 0 - 255 black - white
 
 }
+
+function draw() {
+    
+}
