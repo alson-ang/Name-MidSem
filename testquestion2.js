@@ -31,4 +31,5 @@ function draw(){
 
         }
     }
+    player.vel.x=6;
 }
