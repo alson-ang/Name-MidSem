@@ -3,7 +3,7 @@ function setup() {
     background(150); // grayscale 0 - 255 black - white
 
     circle(100, 100, 50);
-    rect(200, 200, )
+    rect(200, 200, 50, 50);
 }
 
 function draw() {
