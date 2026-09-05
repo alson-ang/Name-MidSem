@@ -6,7 +6,7 @@ function setup() {
     circle(100, 100, 50);
     
 
-    stroke(0); // (r, g, b)
+    stroke(255, 255 ,0); // (r, g, b)
     rect(200, 200, 50, 50);
 }
 
