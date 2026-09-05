@@ -4,7 +4,7 @@ function setup() {
 
 
     for (let i = 0; i < 10; i++) {
-        rect(200 + i * 50, 200, 20, 20);
+        rect(200, 200 + i * 50, 20, 20);
     }
 }
 
