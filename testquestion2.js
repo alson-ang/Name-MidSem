@@ -1,18 +1,14 @@
 function setup() {
-    new Canvas(600, 400);
-    world.gravity.y = 10;
-    floor = new Sprite();
-    floor.color = "blue";
-    floor.y = 370;
-    floor.width = 600;
-    floor.collider = "static";
+	new Canvas(600, 400);
+    world.gravity.y = 10
 }
 
 function draw() {
-    background("black");
-    if(mouse.presses()) {
-        let s = new Sprite(mouseX, mouseY);
-        s.diameter = 35;
-        s.bounciness = 0.67;
+	background(220); 
+	if (mouse.presses()) {
+		new Sprite(mouse.x, mouse.y, 30);
+ground = createSprite(300, 385, 600, 30);
+ground.collider = 'static'; 
+ground.bounciness = 0.7;
     }
 }
