@@ -1,13 +1,22 @@
-function setup() {
-    new Canvas(800, 600);
-    background(150); // (grayscale) 0 - 255 black - white
+// VARIABLES
+let sprite;
+let floor;
 
-    for (let i = 0; i < 10; i++) {     
-        fill(i * 30, i * 30, 0); // (r, g, b)
-        rect(200, 200 + i * 50, 20, 20); // gradient using i
-    }
+function setup() {
+    new Canvas(600, 400);
+    displayMode('centered');
+    background(250);
+    world.gravity.y = 10;
+
+    sprite = new Sprite(300, 200, 30, 30);
+
+    floor = new Sprite(300, 400, 2400, 20, "static");
+}
+
+function preload() {
+
 }
 
 function draw() {
-    
+    background(250);
 }
