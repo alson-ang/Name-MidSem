@@ -7,6 +7,7 @@ function setup() {
     
     fill(255, 0, 0);
     stroke(255, 255 ,0); // (r, g, b)
+    strokeWeight(10);
     rect(200, 200, 50, 50);
 }
 
