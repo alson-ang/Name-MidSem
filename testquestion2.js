@@ -1,18 +1,13 @@
-let xpos = 50
-let ypos = 50
-let colour = 0
-function setup() {
-    createCanvas(600, 600);
-    background("gray")
-    for (let i = 0; i < 10 ; i++) { 
-        fill(colour, colour, colour);
-        circle(xpos+i*50, ypos+i*50, 50);
-        colour += 30;
-    }
+function setup(){ 
+createCanvas(600, 400); 
+background("black");
 }
 
-function draw() {
-    
-    
-
+function draw(){
+    fill("black");
+    stroke("red");
+    strokeWeight(10);
+    triangle(150, 200, 200, 210, 230, 260); 
+    circle(100, 160, 50);
+    rect(250, 150, 50, 50); 
 }
