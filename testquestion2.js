@@ -5,7 +5,7 @@ function setup() {
     noStroke();
     circle(100, 100, 50);
     
-    fill()
+
     stroke(0);
     rect(200, 200, 50, 50);
 }
