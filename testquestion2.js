@@ -1,14 +1,18 @@
-
-let size=50;
-let posx=50;
-let posy =50;
-function setup(){ 
-    createCanvas(600, 600); 
-    background(220); 
-} 
-function draw(){
-    for (let i = 0; i < 10; i++) {
-        fill(0+i*25);
-        circle(posx+i*50,posy+i*50,size);
+let posx = 50;
+let posy = 50;
+let colour = 0;
+function setup(){
+    createCanvas(600,600);
+    background(220);
+    for(let count = 0;count<10;count++){
+        fill(colour);
+        circle(posx,posy,50);
+        posy = posy + 50;
+        posx = posx + 50;
+        colour = colour+25
     }
-} 
+
+}
+
+function draw(){
+}
