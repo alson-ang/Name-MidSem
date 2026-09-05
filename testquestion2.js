@@ -1,17 +1,10 @@
 function setup(){
-    createCanvas(600,400)
-    background('black')
+    createCanvas(600,600)
+    background('grey')
 }
 function draw(){
-
-    strokeWeight(5)
-    stroke('red')
-
-    circle(130,205,50)
-
-    square(230,180,50)
-
-    triangle(350,230,390,170,430,230)
-
-    
+    for(let i = 0; i < 10; i++){
+        fill(10 + i * 25)
+        circle(50 + i * 50, 50 + i * 50, 40)
+    }
 }
