@@ -1,20 +1,18 @@
-function setup(){
-    createCanvas(600,400);
+function setup() {
+    new Canvas(600, 400);
     world.gravity.y = 10;
-    let floor = new Sprite()
-    floor.y = 390;
-    floor.w = 600;
-    floor.h = 30;
-    floor.collider = 'static';
-
+    floor = new Sprite();
+    floor.color = "blue";
+    floor.y = 370;
+    floor.width = 600;
+    floor.collider = "static";
 }
-function draw(){
-        background(220);
-        if (mouse.presses()){
-            let s = new Sprite(mouse.x,mouse.y);
-            s.collider = 'dynamic';
-            s.diameter = 20;
-            s.bounciness = 0.8;
-            
-        }
+
+function draw() {
+    background("black");
+    if(mouse.presses()) {
+        let s = new Sprite(mouseX, mouseY);
+        s.diameter = 35;
+        s.bounciness = 0.67;
+    }
 }
