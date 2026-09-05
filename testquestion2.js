@@ -4,8 +4,8 @@ function setup() {
 
     for (let i = 0; i < 10; i++) {
         
-        fill(i * 30, i * 30, 0); // gradient using i
-        rect(200, 200 + i * 50, 20, 20);
+        fill(i * 30, i * 30, 0); 
+        rect(200, 200 + i * 50, 20, 20); // gradient using i
 
     }
 }
