@@ -1,13 +1,14 @@
+let posX = 50;
+let posY=50;
+
 function setup(){ 
-createCanvas(600, 400); 
-background("black");
+createCanvas(600, 600); 
+background(220); 
 }
 
 function draw(){
-    fill("black");
-    stroke("red");
-    strokeWeight(10);
-    triangle(150, 200, 200, 210, 230, 260); 
-    circle(100, 160, 50);
-    rect(250, 150, 50, 50); 
+    for(let i=0;i<10;i++){
+        fill(0 +i*50);
+        circle(posX +i*50, posY +i*50,50);
+    }
 }
