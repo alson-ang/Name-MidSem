@@ -1,18 +1,17 @@
-let posx = 50;
-let posy = 50;
-let colour = 0;
 function setup(){
-    createCanvas(600,600);
-    background(220);
-    for(let count = 0;count<10;count++){
-        fill(colour);
-        circle(posx,posy,50);
-        posy = posy + 50;
-        posx = posx + 50;
-        colour = colour+25
-    }
-
+    createCanvas(600,400)
+    background('black')
 }
-
 function draw(){
+
+    strokeWeight(5)
+    stroke('red')
+
+    circle(130,205,50)
+
+    square(230,180,50)
+
+    triangle(350,230,390,170,430,230)
+
+    
 }
