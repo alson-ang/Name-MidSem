@@ -11,7 +11,7 @@ function setup() {
     rect(200, 200, 50, 50);
 
     for (let i = 0; i < 10; i++) {
-        
+        console.log
     }
 }
 
