@@ -5,7 +5,7 @@ function setup() {
 
     for (let i = 0; i < 10; i++) {
         
-        fill(i * 30, 0, 0);
+        fill(i * 30, i * 30, 0);
         rect(200, 200 + i * 50, 20, 20);
 
     }
