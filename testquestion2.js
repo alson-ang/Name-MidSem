@@ -1,10 +1,18 @@
-function setup(){
-    createCanvas(600,600);
-    background(220);
+let x;
+let y;
+let circle;
+function setup () {
+    createCanvas(600, 400);
+    background("white")
+    world.gravity.y = 10;
 }
-function draw(){
-    for(let i=0; i<10; i++){
-        fill(i*25);
-        circle(10 + i*30,10 + i*30,20);
-}
+function draw () {
+    background("white")
+    if (mouse.presses()) {
+        circle = new Sprite();
+        circle.x = mouseX;
+        circle.y = mouseY;
+        circle.mass = 2
+        circle.diameter = 40;
+    }    
 }
