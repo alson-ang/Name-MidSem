@@ -1,10 +1,10 @@
 function setup(){
-    createCanvas(600,600)
-    background('grey')
+    createCanvas(600,600);
+    background(220);
 }
 function draw(){
-    for(let i = 0; i < 10; i++){
-        fill(10 + i * 25)
-        circle(50 + i * 50, 50 + i * 50, 40)
-    }
+    for(let i=0; i<10; i++){
+        fill(i*25);
+        circle(10 + i*30,10 + i*30,20);
+}
 }
