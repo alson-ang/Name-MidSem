@@ -1,14 +1,13 @@
 function setup() {
-	new Canvas(600, 400);
-    world.gravity.y = 10
-}
+    createCanvas(600,400);
+    background(255);
+    world.gravity.y = 5;
+}        
 
 function draw() {
-	background(220); 
-	if (mouse.presses()) {
-		new Sprite(mouse.x, mouse.y, 30);
-ground = createSprite(300, 385, 600, 30);
-ground.collider = 'static'; 
-ground.bounciness = 0.7;
-    }
+    background(255);
+    if (mouse.presses()) {
+        ball = new Sprite(mouseX,mouseY,20);
+    
+}
 }
