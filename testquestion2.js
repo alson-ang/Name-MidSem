@@ -1,3 +1,3 @@
 function setup() {
-    new Canva
+    new Canvas()
 }
